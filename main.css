@@ -28,6 +28,10 @@ main {
 
 /*ja tenho login*/
 
+.title{
+    padding: 0px 30px 0px 0px;
+}
+
 .input-box-login {
     display: flex;
     flex-direction: column;
@@ -220,7 +224,7 @@ footer {
     font-weight: 100;
 }
 
-/*Tela Login */
+/*Tela Login*/
 
 .container {
     width: 80%;
@@ -253,7 +257,7 @@ footer {
 }
 
 .form-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding: 10px 0 1px 0;
     display: flex;
     justify-content: space-between;
@@ -297,7 +301,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .input-box {
@@ -328,7 +331,6 @@ footer {
 
 .bi-eye-slash {
     cursor: pointer;
-
 }
 
 .input-box label {
@@ -542,9 +544,8 @@ legend {
     /*tirar o redimensionamento do textarea */
 }
 
-
 .inputs:focus {
-    /*ficar roxo quando clica*/
+    /*quando clica*/
     border-color: white;
 }
 
