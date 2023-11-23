@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <label class="logo"> AEQ Jr.</label>
+            <ul>
+                <li><a class="active" href="sobre.html">Sobre</a></li>
+                <li><a class="active" href="servicos.html">Serviços</a></li>
+                <li><a class="active" href="nossotime.html">Nosso Time</a></li>
+                <li><a class="active" href="contato.html">Contato</a></li>
+                <li><a class="active" href="mej.html">Mej</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box">
+        <fieldset>
+            <legend> Faça seu Orçamento </legend>
+            <form action="Inicio.html">
+
+                <div>
+                    <input type="text" placeholder="Digite seu nome" class="inputs" required>
+
+                </div>
+
+                <div>
+                    <input type="email" placeholder="Digite seu email" class="inputs" required>
+
+                </div>
+
+                <div>
+                    <input type="tel" placeholder="Digite seu telefone" class="inputs" required>
+
+                </div>
+                
+                <p>Selecione um Serviço:</p>
+                <div class="box-select">
+
+                    <input type="radio" id="ppci" name="servico" value="ppci" required>
+                    <label for="ppci"> PPCI </label>
+
+                    <input type="radio" id="laudos" name="servico" value="laudos" required>
+                    <label for="laudos"> Laudos Técnicos </label>
+
+                    <input type="radio" id="arquitetura" name="servico" value="arquitetura" required>
+                    <label for="arquitetura"> Arquitetura </label>
+
+                    <input type="radio" id="levant" name="servico" value="levant" required>
+                    <label for="levant"> Levantamento </label>
+
+                    <input type="radio" id="planta" name="servico" value="planta" required>
+                    <label for="planta"> Plantas Técnicas </label>
+
+                </div>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="3" class="inputs"
+                    placeholder="Digite sua mensagem" required></textarea>
+
+                <div class="continue-button">
+                    <button><a href="#">Enviar</a></button>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+
+    <footer>
+        <main></main>
+        <div id="footer_content">
+
+            <div id="footer_contacts">
+                <h1>Contato</h1>
+                <p>Entre em nossas redes sociais!</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/compjunior/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/compjunior/" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/compjunior/" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="footer_subscribe">
+                <h1>E-mail</h1>
+                <p>Deixe uma mensagem! <br>
+                    <a href="#">aeqjr@empresajunior.com</a>
+                </p>
+                <div id="input_group">
+                    <input type="text" id="text">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 <a href="https://www.instagram.com/_euzebio/"> Beatriz Euzebio</a>
+        </div>
+    </footer>
+</body>
+
+</html>

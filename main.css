@@ -10,18 +10,21 @@
     font-family: 'Inter', sans-serif;
 }
 
-main{
+main {
+    /*footer ir para baixo*/
     height: 80vh;
 }
-/*
-body {
+
+.login {
+    /*para o index ficar certo*/
     width: 100%;
-    height: 80vh; /*resolver isso aqui*
+    height: 80vh;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #0c0ce94d;
-}*/
+}
 
 /*NavBar*/
 
@@ -112,48 +115,48 @@ footer {
     transition: all 0.4s;
 }
 
-#footer_social_media .footer-link:hover{
+#footer_social_media .footer-link:hover {
     opacity: 0.8;
 }
 
-#instagram{
+#instagram {
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
 
-#facebook{
-    background-color:#4267b3 ;
+#facebook {
+    background-color: #4267b3;
 }
 
-#linkedin{
-    background-color:#0e76a8;
+#linkedin {
+    background-color: #0e76a8;
 }
 
-#footer_subscribe{
+#footer_subscribe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-#footer_subscribe p{
+#footer_subscribe p {
     color: white;
 }
 
-#input_group{
+#input_group {
     display: flex;
     align-items: center;
     background-color: #4267b3;
     border-radius: 4px;
 }
 
-#input_group input{
-    all:unset;
+#input_group input {
+    all: unset;
     padding: 0.75rem;
     width: 100%;
 }
 
-#input_group button{
-    background-color: black ;
-    border:none;
+#input_group button {
+    background-color: black;
+    border: none;
     color: white;
     padding: 0px 1.25rem;
     font-size: 1.125rem;
@@ -163,11 +166,11 @@ footer {
     transition: all 0.4s;
 }
 
-#input_group button:hover{
+#input_group button:hover {
     opacity: 0.8;
 }
 
-#footer_copyright{
+#footer_copyright {
     display: flex;
     justify-content: center;
     background-color: black;
@@ -175,6 +178,7 @@ footer {
     padding: 1.5rem;
     font-weight: 100;
 }
+
 /*Tela Login */
 
 .container {
@@ -359,7 +363,20 @@ footer {
         overflow-x: hidden;
         flex-wrap: nowrap;
         max-height: 10rem;
-        padding-right: 5rem;
+        padding-right: 8rem;
+    }
+
+
+    .title {
+        font-size: 15px;
+    }
+
+    .login-button button {
+        border: none;
+        background-color: #6c63ff;
+        padding: 0.3rem 0.7rem;
+        border-radius: 3px;
+        cursor: pointer;
     }
 }
 
@@ -399,10 +416,102 @@ footer {
     }
 }
 
-@media screen and (max-width:768px){
-    #footer_content{
-        grid-template-columns: repeat(1,1fr);
-        gap:2rem;
+@media screen and (max-width:768px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
 
     }
+}
+
+/*contato.html*/
+/*Formulario*/
+.box {
+    display: flex;
+    justify-content: center;
+    /*alinhar na horizontal*/
+    align-items: center;
+    /*alinhar na vertical*/
+    height: center;
+    width: center;
+    background-color: transparent;
+    /*cor do fundo */
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    /*cor da fonte*/
+    overflow: hidden;
+}
+
+fieldset {
+    border: 3px solid #6c63ff;
+    /*Cor da borda do formulario */
+    padding: 5px 10px;
+}
+
+legend {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    color: #6c63ff;
+}
+
+.box form {
+    display: flex;
+    justify-content: center;
+    /*alinhar na horizontal*/
+    align-items: stretch;
+    flex-direction: column;
+    /*deixar em coluna*/
+    gap: 1rem;
+    /*espaço entre os blocos*/
+    min-width: 30%;
+    padding: 10px;
+}
+
+.box p {
+    font-size: 15px;
+}
+
+.box label {
+    font-size: 15px;
+}
+
+.inputs {
+    padding: 6px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    border: 2px solid #6c63ff;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
+    resize: none;
+    /*tirar o redimensionamento do textarea */
+}
+
+
+.inputs:focus {
+    /*ficar roxo quando clica*/
+    border-color: white;
+}
+
+.box-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box textarea {
+    padding: 6px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    border: 2px solid #6c63ff;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .3s;
 }
