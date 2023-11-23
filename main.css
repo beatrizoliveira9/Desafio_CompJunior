@@ -26,6 +26,40 @@ main {
     background: #0c0ce94d;
 }
 
+/*ja tenho login*/
+
+.input-box-login {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box-login input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box-login input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box-login input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box-login label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box-login input::placeholder {
+    color: #000000be;
+}
+
 /*NavBar*/
 
 nav {
@@ -220,7 +254,7 @@ footer {
 
 .form-header {
     margin-bottom: 3rem;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 1px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -369,8 +403,16 @@ footer {
         overflow: scroll;
         overflow-x: hidden;
         flex-wrap: nowrap;
-        max-height: 10rem;
+        max-height: 15rem;
         padding-right: 8rem;
+    }
+
+    .inputs-group-login {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 15rem;
+        padding-right: 8rem;
+        align-items: flex-start;
     }
 
 
