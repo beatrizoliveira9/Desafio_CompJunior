@@ -34,6 +34,13 @@ nav {
     width: 100%;
 }
 
+.logoimg {
+    width: 100px;
+    display: flex;
+    float: left;
+    padding: 10px;
+}
+
 label.logo {
     color: white;
     font-size: 35px;
