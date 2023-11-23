@@ -9,6 +9,10 @@
     list-style: none;
     font-family: 'Inter', sans-serif;
 }
+
+main{
+    height: 80vh;
+}
 /*
 body {
     width: 100%;
@@ -17,51 +21,51 @@ body {
     justify-content: center;
     align-items: center;
     background: #0c0ce94d;
-}*/ 
+}*/
 
 /*NavBar*/
 
 nav {
-    background:#6b63fff1 ;
+    background: #6b63fff1;
     height: none;
-    width: 100% ;
+    width: 100%;
 }
 
-label.logo{
-    color:white;
+label.logo {
+    color: white;
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: Inter;
 }
 
-nav ul{
-    float:right;
+nav ul {
+    float: right;
     margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase ;
+    text-transform: uppercase;
 }
 
-a.active:hover{
-    background:rgb(75, 70, 156) ;
+a.active:hover {
+    background: rgb(75, 70, 156);
     transition: .5s;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
-    color:white;
+    color: white;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -69,10 +73,108 @@ a.active:hover{
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
 
+/*footer*/
+
+footer {
+    width: 100%;
+    color: white;
+}
+
+#footer_content {
+    background-color: #6b63fff1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color:#4267b3 ;
+}
+
+#linkedin{
+    background-color:#0e76a8;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: white;
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: #4267b3;
+    border-radius: 4px;
+}
+
+#input_group input{
+    all:unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: black ;
+    border:none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 0px 4px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
 /*Tela Login */
 
 .container {
@@ -218,13 +320,14 @@ a.active:hover{
 
 
 @media screen and (max-width: 1330px) {
+
     /*navbar*/
-    label.logo{
+    label.logo {
         font-size: 30px;
         padding-left: 50px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 16px;
     }
 
@@ -260,37 +363,46 @@ a.active:hover{
     }
 }
 
-@media (max-width: 858px){
-    .checkbtn{
+@media (max-width: 858px) {
+    .checkbtn {
         display: block;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
         background: #6c63ff;
-        top:80px;
+        top: 80px;
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
 
-    nav ul li{
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 20px;
     }
 
-    a:hover a.active{
+    a:hover a.active {
         background: none;
-        color:#6b63fff1;
+        color: #6b63fff1;
     }
 
-    #check:checked ~ ul{
-        left:0;
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    #footer_content{
+        grid-template-columns: repeat(1,1fr);
+        gap:2rem;
+
     }
 }
