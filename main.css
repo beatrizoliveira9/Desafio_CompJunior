@@ -32,10 +32,16 @@ main {
     padding: 0px 30px 0px 0px;
 }
 
+.input-box-login a{
+  font-size: 13px;
+  padding-bottom: 0.05px;
+}
+
 .input-box-login {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+    
 }
 
 .input-box-login input {
@@ -327,10 +333,6 @@ footer {
 
 .input-box input:focus-visible {
     outline: 1px solid #6c63ff;
-}
-
-.bi-eye-slash {
-    cursor: pointer;
 }
 
 .input-box label {
