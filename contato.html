@@ -11,23 +11,28 @@
 </head>
 
 <body>
-    <header>
+    <header> <!--Cabeçalho-->
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fa-solid fa-bars"></i>
             </label>
+            <img class="logoimg" src="/logonav.png">
             <label class="logo"> AEQ Jr.</label>
             <ul>
-                <li><a class="active" href="sobre.html">Sobre</a></li>
-                <li><a class="active" href="servicos.html">Serviços</a></li>
-                <li><a class="active" href="nossotime.html">Nosso Time</a></li>
-                <li><a class="active" href="contato.html">Contato</a></li>
-                <li><a class="active" href="mej.html">Mej</a></li>
+                <li><a class="active" href="/quemsomos.html">Quem Somos?</a></li>
+                <li><a class="active" href="/projetos.html">Projetos</a></li>
+                <li><a class="active" href="/contato.html">Contato</a></li>
+
+                <div id="input_navbar">
+                <input type="text" id="text" class="search-text" placeholder="Pesquisar">
+                <a href="#" class="search-text-lup" id="busca">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                </div>
             </ul>
         </nav>
     </header>
-
     <div class="box">
         <fieldset>
             <legend> Faça seu Orçamento </legend>
