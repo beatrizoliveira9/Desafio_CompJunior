@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="/main.css">
+
+</head>
+
+<body>
+    <header> <!--Cabeçalho-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <img class="logoimg" src="/logonav.png">
+            <label class="logo"> AEQ Jr.</label>
+            <ul>
+                <li><a class="active" href="/quemSomos/quemsomos.html">Quem Somos?</a></li>
+                <li><a class="active" href="/projetos/projetos.html">Projetos</a></li>
+                <li><a class="active" href="/contato/contato.html">Contato</a></li>
+                <li><a class="active" href="/login/entrar/index.html">Login</a></li>
+
+                <div id="input_navbar">
+                    <input type="text" id="text" class="search-text" placeholder="Pesquisar">
+                    <a href="#" class="search-text-lup" id="busca">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="app">
+        <h1>Adicionar Membro</h1>
+        <form id="add-user-form">
+
+            <div class="campo-form">
+            <label for="firstName">Nome:</label>
+            <input type="text" id="firstName" name="firstName" class="inputs">
+            <small></small>
+            </div>
+
+            <div class="campo-form">
+            <label for="lastName">Sobrenome:</label>
+            <input type="text" id="lastName" name="lastName" class="inputs">
+            <small></small>
+            </div>
+
+            <div class="campo-form">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" class="inputs">
+            <small></small>
+            </div>
+            
+            <div class="campo-form">
+            <label for="age">Idade:</label>
+            <input type="text" id="age" name="age" class="inputs">
+            <small></small>
+            </div>
+
+            <div class="campo-form">
+            <label for="image">Foto:</label>
+            <input type="url" id="image" name="image" class="inputs">
+            <small></small>
+            </div>
+                
+            <button type="submit" onclick="addUser()">Adicionar</button>
+
+        </form>
+        <h1>Lista de Membros da Aeq Jr.</h1>
+        <ul class="grid-container" id="user-list"></ul>
+    </div>
+    
+
+    <footer> <!--Rodapé-->
+        <main></main>
+        <div id="footer_content">
+
+            <div id="footer_contacts">
+                <h2>Contato</h2>
+                <div class="footer-list">
+                    <h3>Telefone</h3>
+                    <p>(39) 98546-8741</p>
+                    <h3>E-mail</h3>
+                    <p>aeqjr@empresajr.com</p>
+                </div>
+                <div class="footer-list">
+                    <h3>Localização</h3>
+                     <a href="https://www.google.com/maps/place/Universidade+Federal+de+Sergipe/@-10.925956,-37.103066,15z/data=!4m6!3m5!1s0x71ab2423713aed3:0xdc26874c8378592c!8m2!3d-10.9263351!4d-37.1030664!16s%2Fm%2F0c40rh8?hl=pt-BR&entry=ttu"></a>
+                        <p>Rosa Elze <br>
+                        São Cristóvão - SE<br>
+                        49100-000</p>
+                </div>
+                <div class="footer-list">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9317.418064824687!2d-37.11271720736877!3d-10.92617969828975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab2423713aed3%3A0xdc26874c8378592c!2sUniversidade%20Federal%20de%20Sergipe!5e0!3m2!1spt-BR!2sbr!4v1701200140420!5m2!1spt-BR!2sbr"
+                        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+
+                <div id="footer_social_media">
+
+                    <a href="https://www.instagram.com/compjunior/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/compjunior/" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/compjunior/" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer_subscribe">
+                <form>
+                    <div class="inputs-group-footer">
+                        <div class="input-box">
+                            <input id="firstname" type="text" name="firstname" placeholder="Nome" required>
+                            <small> </small>
+                        </div>
+                        <div class="input-box">
+                            <input id="telefone" type="text" name="telefone" placeholder="Telefone" required>
+                            <small> </small>
+                        </div>
+                        <div class="input-box">
+                            <input id="email" type="email" name="email" placeholder="E-mail" required>
+                            <small> </small>
+                        </div>
+                        <div class="input-box">
+                            <input id="mensagem" type="text" name="mensagem" placeholder="Mensagem" required>
+                            <small> </small>
+                        </div>
+                        <div class="continue-button">
+                            <button><a href="/quemSomos/quemsomos.html">Enviar E-mail</a></button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 <a href="https://www.instagram.com/_euzebio/"> Beatriz Euzebio</a>
+        </div>
+    </footer>
+
+    <script src="/quemSomos/quemsomos.js"></script>
+</body>
+</html>

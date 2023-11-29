@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="/main.css">
+
+</head>
+
+<body>
+    <header> <!--Cabeçalho-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <img class="logoimg" src="/logonav.png">
+            <label class="logo"> AEQ Jr.</label>
+            <ul>
+                <li><a class="active" href="/quemSomos/quemsomos.html">Quem Somos?</a></li>
+                <li><a class="active" href="/projetos/projetos.html">Projetos</a></li>
+                <li><a class="active" href="/contato/contato.html">Contato</a></li>
+                <li><a class="active" href="/login/entrar/index.html">Login</a></li>
+
+                <div id="input_navbar">
+                    <input type="text" id="text" class="search-text" placeholder="Pesquisar">
+                    <a href="#" class="search-text-lup" id="busca">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="/projetos/1.jpeg" alt="Anuncio 1">
+            </div>
+            <div class="slide">
+                <img src="/projetos/2.jpg" alt="Anuncio 2">
+            </div>
+            <div class="slide">
+                <img src="/projetos/3.jpeg" alt="Anuncio 3">
+            </div>
+            <div class="slide">
+                <img src="/projetos/4.jpeg" alt="Anuncio 4">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+</div>
+
+<footer> <!--Rodapé-->
+    <main></main>
+    <div id="footer_content">
+
+        <div id="footer_contacts">
+            <h2>Contato</h2>
+            <div class="footer-list">
+                <h3>Telefone</h3>
+                <p>(39) 98546-8741</p>
+                <h3>E-mail</h3>
+                <p>aeqjr@empresajr.com</p>
+            </div>
+            <div class="footer-list">
+                <h3>Localização</h3>
+                 <a href="https://www.google.com/maps/place/Universidade+Federal+de+Sergipe/@-10.925956,-37.103066,15z/data=!4m6!3m5!1s0x71ab2423713aed3:0xdc26874c8378592c!8m2!3d-10.9263351!4d-37.1030664!16s%2Fm%2F0c40rh8?hl=pt-BR&entry=ttu"></a>
+                    <p>Rosa Elze <br>
+                    São Cristóvão - SE<br>
+                    49100-000</p>
+            </div>
+            <div class="footer-list">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9317.418064824687!2d-37.11271720736877!3d-10.92617969828975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab2423713aed3%3A0xdc26874c8378592c!2sUniversidade%20Federal%20de%20Sergipe!5e0!3m2!1spt-BR!2sbr!4v1701200140420!5m2!1spt-BR!2sbr"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+            <div id="footer_social_media">
+
+                <a href="https://www.instagram.com/compjunior/" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/compjunior/" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/compjunior/" class="footer-link" id="linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer_subscribe">
+            <form>
+                <div class="inputs-group-footer">
+                    <div class="input-box">
+                        <input id="firstname" type="text" name="firstname" placeholder="Nome" required>
+                        <small> </small>
+                    </div>
+                    <div class="input-box">
+                        <input id="telefone" type="text" name="telefone" placeholder="Telefone" required>
+                        <small> </small>
+                    </div>
+                    <div class="input-box">
+                        <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        <small> </small>
+                    </div>
+                    <div class="input-box">
+                        <input id="mensagem" type="text" name="mensagem" placeholder="Mensagem" required>
+                        <small> </small>
+                    </div>
+                    <div class="continue-button">
+                        <button><a href="/quemSomos/quemsomos.html">Enviar E-mail</a></button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <div id="footer_copyright">
+        &#169
+        2023 <a href="https://www.instagram.com/_euzebio/"> Beatriz Euzebio</a>
+    </div>
+</footer>
+
+    <script src="/projetos/projetos.js"></script>
+</body>
+</html>
