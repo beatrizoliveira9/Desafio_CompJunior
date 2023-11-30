@@ -208,7 +208,6 @@ footer {
 .footer-list p{
     color:white;
     flex-direction: column;
-    background-color: red;
     margin-top: 30px;
     justify-content: flex-start;
 }
@@ -353,6 +352,7 @@ footer {
     flex-direction: column;
     background-color: #fff;
     padding: 5rem;
+    border: none;
     
 }
 
@@ -461,7 +461,10 @@ footer {
 }
 
 
-
+.title-index{
+    font-size: 15px;
+    padding-right: 12px;
+}
 
 @media screen and (max-width: 1330px) {
 
@@ -523,6 +526,7 @@ footer {
         font-size: 15px;
     }
 
+    
     .login-button button {
         border: none;
         background-color: #6c63ff;
@@ -572,7 +576,14 @@ footer {
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
+        overflow-y: hidden;
+    }
 
+    .cards{
+        display: grid;
+        flex-direction: column;
+        margin-top: 260px;
+               
     }
 }
 
@@ -687,6 +698,7 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
 }
 
 h1 {
@@ -901,4 +913,50 @@ small{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
 }
+
+/*Cards de Projetos*/
+
+.cards{
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+    padding-top: 100px;
+    padding: 30px;
+}
+
+.cards-projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    
+    padding: 1rem 7rem;
+    border-radius: 5px;
+    max-height: 300px;
+    margin-left: 6px;
+    width: 100px;
+}
+
+.cards-projeto h3{
+    margin: 3px 0px;
+    font-size: 15px;
+}
+
+.cards-projeto p{
+    padding: 2rem 3rem;
+    text-align: justify;
+    font-weight: 300;
+    max-height: 150px;
+    font-size: 14px;
+    margin-bottom: 15px;
+   
+    color:black;
+}
+.icon img{
+    height: 44px;
+    width: 44px;
+}
+
 
