@@ -14,7 +14,44 @@ main {
     /*footer ir para baixo*/
     height: 80vh;
 }
+/*footer forms*/
 
+.input-box-footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input-box-footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box-footer input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box-footer input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box-footer input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box-footer label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box-footer input::placeholder {
+    color: #000000be;
+}
 .login {
     /*para o index ficar certo*/
     width: 100%;
@@ -279,6 +316,7 @@ footer {
     height: 20hv;
     width: 400px;
 }
+
 .inputs-group-footer{
     display:flex;
     flex-direction: column;
@@ -314,12 +352,12 @@ footer {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    padding: 3rem;
+    padding: 5rem;
+    
 }
 
 .form-header {
-    margin-bottom: 2rem;
-    padding: 10px 0 1px 0;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -359,9 +397,11 @@ footer {
 }
 
 .inputs-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 75px;
+    flex-wrap: nowrap;
+    padding: 0.6rem;
 }
 
 .input-box {
@@ -371,8 +411,8 @@ footer {
 }
 
 .input-box input {
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
+    margin: 0.6rem 0.7rem;
+    padding: 0.8rem 1.4rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
@@ -549,7 +589,7 @@ footer {
     background-color: transparent;
     /*cor do fundo */
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     color: black;
     /*cor da fonte*/
     overflow: hidden;
@@ -604,6 +644,9 @@ legend {
     resize: none;
     /*tirar o redimensionamento do textarea */
 }
+.inputs::placeholder{
+color:white;
+}
 
 .inputs:focus {
     /*quando clica*/
@@ -611,8 +654,10 @@ legend {
 }
 
 .box-select {
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    grid-template-columns: (2, 1fr);
+    justify-content: space-around;
+    padding: 5px 5px;
 }
 
 .box textarea {
